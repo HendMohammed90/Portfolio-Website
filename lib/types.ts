@@ -24,3 +24,9 @@ export type FieldProps = {
     type: string;
     required?: boolean;
 };
+
+export type Props = {
+    children: React.ReactNode;
+    delay?: number;
+    className?: string;
+};

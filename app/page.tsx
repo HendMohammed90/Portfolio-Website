@@ -7,16 +7,26 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import ScrollProgress from "@/components/ScrollProgress";
 import BackToTop from "@/shared/BackToTop";
+import Reveal from "@/shared/Reveal";
+
 export default function Page() {
   return (
     <main className="relative min-h-screen overflow-hidden">
       <ScrollProgress />
       <Navbar />
       <Hero />
-      <Skills />
-      <Experience />
-      <WorkSamples />
-      <Contact />
+      <Reveal>
+        <Skills />
+      </Reveal>
+      <Reveal>
+        <Experience />
+      </Reveal>
+      <Reveal>
+        <WorkSamples />
+      </Reveal>
+      <Reveal>
+        <Contact />
+      </Reveal>
       <Footer />
       <BackToTop />
     </main>
