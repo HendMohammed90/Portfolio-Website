@@ -8,6 +8,7 @@ export type NavItemProps = {
     label: string;
     onClick?: () => void;
     className?: string;
+    isActive?: boolean;
 };
 
 export type ContactCardProps = {
