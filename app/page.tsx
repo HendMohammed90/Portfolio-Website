@@ -6,7 +6,7 @@ import WorkSamples from "@/components/WorkSamples";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import ScrollProgress from "@/components/ScrollProgress";
-
+import BackToTop from "@/shared/BackToTop";
 export default function Page() {
   return (
     <main className="relative min-h-screen overflow-hidden">
@@ -18,6 +18,7 @@ export default function Page() {
       <WorkSamples />
       <Contact />
       <Footer />
+      <BackToTop />
     </main>
   );
 }
