@@ -14,13 +14,13 @@ export const SKILLS: SkillCategory[] = [
       { skill: "Next.js", percentage: "75%" },
       { skill: "Tailwind CSS", percentage: "85%" },
       { skill: "Bootstrap", percentage: "70%" },
-      { skill: "Angular.js", percentage: "40%" },
-      { skill: "Flutter", percentage: "40%" },
+      { skill: "Angular.js", percentage: "30%" },
+      { skill: "Flutter", percentage: "30%" },
     ],
   },
   {
     title: "Backend",
-    icon: "/assets/images/backend.png",
+    icon: "/assets/images/backend.svg",
     skills: [
       { skill: "Node.js", percentage: "60%" },
       { skill: "Express.js", percentage: "60%" },
@@ -40,7 +40,7 @@ export const SKILLS: SkillCategory[] = [
   },
   {
     title: "Tools",
-    icon: "/assets/images/tools.png",
+    icon: "/assets/images/tools.svg",
     skills: [
       { skill: "Git & GitHub", percentage: "90%" },
       { skill: "VS Code", percentage: "95%" },
@@ -61,6 +61,27 @@ export const SKILLS: SkillCategory[] = [
 ];
 
 export const WORK_EXPERIENCE = [
+  {
+    title: "Software Developer - Namaa For Engineering and Consultations ",
+    date: "Feb 2025 – Ongoing",
+    responsibilities: [
+      "Developed and maintained a web application for managing engineering projects and consultations using React, Next.js, TypeScript, and Tailwind CSS.",
+      "Created a user-friendly interface for project tracking and collaboration.",
+      "Integrated with backend APIs for data management and authentication.",
+      "Implemented responsive design for desktop and mobile devices.",
+      "Working on real estate engineering applications with a focus on responsive and scalable UI."
+    ],
+  },
+  {
+    title: "React Frontend Developer - ASAB Company ",
+    date: "Mar 2024 – Jul 2025",
+    responsibilities: [
+      "Developed and styled payroll, attendance, and people management modules using reusable React components based on Figma designs.",
+      "Created a generic table component with filtering, pagination, and dynamic configurations.",
+      "Integrated APIs and managed global state using Redux.",
+      "Built secure login flow with protected routing and API integration."
+    ],
+  },
   {
     title: "React / React Native Developer — Squip",
     date: "Feb 2023 – Dec 2023",

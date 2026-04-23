@@ -55,14 +55,15 @@ export default function Hero() {
             <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-accent to-accent2 blur-2xl opacity-40" />
             <div className="absolute inset-2 rounded-full bg-gradient-to-tr from-accent to-accent2 p-[2px]">
               <div className="h-full w-full overflow-hidden rounded-full bg-bg2">
-                <Image src="/assets/images/me.png" alt="Hend Mohammed" className="h-full w-full object-cover" width={300} height={300} />
+                <Image src="/assets/images/me.png" alt="Hend Mohammed" className="h-full w-full object-cover" width={300} height={300} loading="eager" />
               </div>
             </div>
             {[
               { src: "/assets/images/react.svg", pos: "top-2 -left-4", delay: "0s" },
-              { src: "/assets/images/js.svg", pos: "top-1/3 -right-6", delay: "1s" },
-              { src: "/assets/images/html.svg", pos: "bottom-6 -left-6", delay: "2s" },
-              { src: "/assets/images/css.svg", pos: "-bottom-2 right-6", delay: "3s" },
+              { src: "/assets/images/next.svg", pos: "top-1/3 -right-6", delay: "1s" },
+              { src: "/assets/images/typescript.svg", pos: "bottom-6 -left-6", delay: "2s" },
+              { src: "/assets/images/tailwind.svg", pos: "-bottom-2 right-6", delay: "3s" },
+              { src: "/assets/images/git.svg", pos: "-bottom-2 right-6", delay: "3s" },
             ].map((t) => (
               <div
                 key={t.src}
