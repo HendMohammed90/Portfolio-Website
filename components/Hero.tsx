@@ -35,10 +35,17 @@ export default function Hero() {
             >
               Get in Touch
             </a>
+            <a
+              href="/resume.pdf"
+              download
+              className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-5 py-3 font-semibold text-ink hover:bg-accent/20 transition"
+            >
+              Download CV
+            </a>
           </div>
           <div className="mt-8 flex items-center gap-4 text-xl text-muted">
             <a aria-label="LinkedIn" href="https://www.linkedin.com/in/hend-mohammed-bahar" target="_blank" rel="noreferrer" className="hover:text-accent transition"><FiLinkedin /></a>
-            <a aria-label="GitHub" href="https://github.com/" target="_blank" rel="noreferrer" className="hover:text-accent transition"><FiGithub /></a>
+            <a aria-label="GitHub" href="https://github.com/HendMohammed90" target="_blank" rel="noreferrer" className="hover:text-accent transition"><FiGithub /></a>
             <a aria-label="Email" href="#contact" className="hover:text-accent transition"><FiMail /></a>
           </div>
         </div>
