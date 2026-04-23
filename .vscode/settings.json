@@ -1,0 +1,18 @@
+{
+  "explorer.excludeGitIgnore": true,
+  "files.exclude": {
+    "**/.next": true,
+    "**/out": true,
+    "**/dist": true
+  },
+  "search.exclude": {
+    "**/.next": true,
+    "**/out": true,
+    "**/dist": true
+  },
+  "files.watcherExclude": {
+    "**/.next/**": true,
+    "**/out/**": true,
+    "**/dist/**": true
+  }
+}

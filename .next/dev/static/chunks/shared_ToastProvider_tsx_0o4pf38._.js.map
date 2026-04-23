@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/tamer/Downloads/portfolio/shared/ToastProvider.tsx"],"sourcesContent":["\"use client\";\n\nimport { Toaster } from \"react-hot-toast\";\n\nexport function ToastProvider() {\n  return (\n    <Toaster\n      position=\"top-right\"\n      toastOptions={{\n        duration: 3500,\n      }}\n    />\n  );\n}\n"],"names":["ToastProvider","position","toastOptions","duration"],"mappings":";;;;;AAEA;AAFA;;;AAIO,SAASA;IACd,qBACE,6LAAC,qKAAO;QACNC,UAAS;QACTC,cAAc;YACZC,UAAU;QACZ;;;;;;AAGN;KATgBH"}}]
-}
