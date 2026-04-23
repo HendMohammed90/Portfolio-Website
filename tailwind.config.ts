@@ -4,13 +4,15 @@ const config: Config = {
   content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
   theme: {
     extend: {
+      darkMode: "class",
       colors: {
-        bg: "#0b0b15",
-        bg2: "#11122a",
+        bg: "rgb(var(--c-bg) / <alpha-value>)",
+        bg2: "rgb(var(--c-bg2) / <alpha-value>)",
+        ink: "rgb(var(--c-ink) / <alpha-value>)",
+        muted: "rgb(var(--c-muted) / <alpha-value>)",
         accent: "#a855f7",
         accent2: "#22d3ee",
-        ink: "#e5e7eb",
-        muted: "#9ca3af",
+        onAccent: "#0b0b15",
       },
       fontFamily: {
         sans: ["var(--font-sans)", "ui-sans-serif", "system-ui"],

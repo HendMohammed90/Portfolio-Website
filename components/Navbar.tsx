@@ -3,6 +3,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { NAV_LINKS } from "@/lib/data";
 import { NavLink, NavItemProps } from "@/lib/types";
+import ThemeToggle from "@/shared/ThemeToggle";
 
 function NavItem({ href, label, onClick, className, isActive }: NavItemProps) {
   return (
@@ -11,7 +12,7 @@ function NavItem({ href, label, onClick, className, isActive }: NavItemProps) {
       <span
         className={`absolute -bottom-1 left-0 h-[2px] rounded-full bg-gradient-to-r from-accent to-accent2 transition-all ${isActive ? "w-full" : "w-0"
           }`}
-        />
+      />
     </a>
   );
 }
@@ -96,21 +97,27 @@ export default function Navbar() {
           })}
         </ul>
         {/* Desktop Call to Action */}
-        <a
-          href="#contact"
-          className="hidden md:inline-flex items-center rounded-full bg-gradient-to-r from-accent to-accent2 px-4 py-2 text-sm font-semibold text-bg hover:opacity-90 transition"
-        >
-          Hire Me
-        </a>
-        <button
-          aria-label="Toggle menu"
-          aria-expanded={open}
-          aria-controls="mobile-menu"
-          className="md:hidden text-2xl text-ink"
-          onClick={() => setOpen((v) => !v)}
-        >
-          {open ? <FiX /> : <FiMenu />}
-        </button>
+        <div className="hidden md:flex items-center gap-3">
+          <ThemeToggle />
+          <a
+            href="#contact"
+            className="inline-flex items-center rounded-full bg-gradient-to-r from-accent to-accent2 px-4 py-2 text-sm font-semibold text-onAccent hover:opacity-90 transition"
+          >
+            Hire Me
+          </a>
+        </div>
+        <div className="md:hidden flex items-center gap-2">
+          <ThemeToggle />
+          <button
+            aria-label="Toggle menu"
+            aria-expanded={open}
+            aria-controls="mobile-menu"
+            className="text-2xl text-ink"
+            onClick={() => setOpen((v) => !v)}
+          >
+            {open ? <FiX /> : <FiMenu />}
+          </button>
+        </div>
       </nav>
       {open && (
         <div className="md:hidden border-t border-white/5 bg-bg/95 backdrop-blur">
