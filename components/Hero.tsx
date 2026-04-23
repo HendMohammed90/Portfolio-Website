@@ -60,10 +60,10 @@ export default function Hero() {
             </div>
             {[
               { src: "/assets/images/react.svg", pos: "top-2 -left-4", delay: "0s" },
-              { src: "/assets/images/next.svg", pos: "top-1/3 -right-6", delay: "1s" },
+              { src: "/assets/images/nextjs.svg", pos: "top-1/3 -right-6", delay: "1s" },
               { src: "/assets/images/typescript.svg", pos: "bottom-6 -left-6", delay: "2s" },
               { src: "/assets/images/tailwind.svg", pos: "-bottom-2 right-6", delay: "3s" },
-              { src: "/assets/images/git.svg", pos: "-bottom-2 right-6", delay: "3s" },
+              { src: "/assets/images/github.svg", pos: "-bottom-2 right-6", delay: "3s" },
             ].map((t) => (
               <div
                 key={t.src}
